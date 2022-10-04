@@ -1,70 +1,42 @@
-# Getting Started with Create React App
+# APPLICATION ALGORITHM
+### {1} => Organize EveryThing
+Create Folders [ Pages, Components ]
+-- In Components --
+1- create Popular file
+2- create Vegiterian file
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+-- In Pages --
+1- create Pages File & render it in App.js
+2- create Home File
+3- Add Popular And Vegiterian in Home File
+4- Add Home in Pages file
+<!-- we have
 
-## Available Scripts
+pages here which can is going to contain
 
-In the project directory, you can run:
+all the pages so home
 
-### `npm start`
+and then searched items and whatever is
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+going to come next and then
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+home contains veggie and popular which
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+are these two components -->
+<!-- --------------------------------------- -->
+### {2} => Popular Component
+ Fetch Data From API and make it async
+- run a function which contain fetch process in useEffect() to render only on begining the app
+-- convert data to javaScript Object by using data.json() 
+--- save data in state 
+---- mapping on the popular state and return in DOM a div with key = each recipe id & title of each recipe
+### {3} => Installation Search About All Of It
+1- run this in terminal 
+  --> npm install @splidejs/react-splide framer-motion react-icons react-router-dom styled-components
+2- import styled from "styled-components"
+3- import { Splide, SplideSlide } from '@splidejs/react-splide'
+4- import '@splidejs/react-splide/css';
+### {4} => save data on localStorage
+1- check if there is a popular value in local
+2- true => store value and make it equal to the popular value
+3- false => repeate the {2} step [Fetch Fuc**n Data]
